@@ -1,907 +1,245 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		217375241BA278DE0033461F /* RateLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 219E73031B27702C004AB616 /* RateLimit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		217375251BA278DE0033461F /* RateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C08FD91B28EC85005DDE76 /* RateLimit.swift */; };
-		2173752D1BA2791E0033461F /* PersistentRateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2173752C1BA2791E0033461F /* PersistentRateLimit.swift */; };
-		2173752E1BA2791E0033461F /* PersistentRateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2173752C1BA2791E0033461F /* PersistentRateLimit.swift */; };
-		2173752F1BA2791E0033461F /* PersistentRateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2173752C1BA2791E0033461F /* PersistentRateLimit.swift */; };
-		219E73041B27702C004AB616 /* RateLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 219E73031B27702C004AB616 /* RateLimit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		219E730B1B27702C004AB616 /* RateLimit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219E73001B27702C004AB616 /* RateLimit.framework */; };
-		21B1083B1B279A4F003693A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1083A1B279A4F003693A7 /* AppDelegate.swift */; };
-		21B1083D1B279A4F003693A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1083C1B279A4F003693A7 /* ViewController.swift */; };
-		21B108421B279A4F003693A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B108411B279A4F003693A7 /* Assets.xcassets */; };
-		21B108451B279A4F003693A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B108431B279A4F003693A7 /* LaunchScreen.storyboard */; };
-		21B1084B1B279BB6003693A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B1084A1B279BB6003693A7 /* Main.storyboard */; };
-		21CDDFFE1B278DB5001B8D87 /* RateLimit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CDDFF41B278DB5001B8D87 /* RateLimit.framework */; };
-		21CDE00D1B278E37001B8D87 /* RateLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 219E73031B27702C004AB616 /* RateLimit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21CDE0161B278F96001B8D87 /* RateLimitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CDE0121B278F54001B8D87 /* RateLimitTests.swift */; };
-		21CDE0171B278F97001B8D87 /* RateLimitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CDE0121B278F54001B8D87 /* RateLimitTests.swift */; };
-		21E548E81BF69878004855AE /* RateLimit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219E73001B27702C004AB616 /* RateLimit.framework */; };
-		21E548EA1BF69894004855AE /* RateLimit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 219E73001B27702C004AB616 /* RateLimit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		36C08FDA1B28EC85005DDE76 /* RateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C08FD91B28EC85005DDE76 /* RateLimit.swift */; };
-		36C08FDB1B28EC85005DDE76 /* RateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C08FD91B28EC85005DDE76 /* RateLimit.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		219E730C1B27702C004AB616 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 219E72F71B27702C004AB616 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 219E72FF1B27702C004AB616;
-			remoteInfo = RateLimit;
-		};
-		21CDDFFF1B278DB5001B8D87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 219E72F71B27702C004AB616 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21CDDFF31B278DB5001B8D87;
-			remoteInfo = RateLimit;
-		};
-		21E548E61BF69874004855AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 219E72F71B27702C004AB616 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 219E72FF1B27702C004AB616;
-			remoteInfo = "RateLimit-iOS";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		21E548E91BF6987B004855AE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				21E548EA1BF69894004855AE /* RateLimit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		2173751C1BA278BF0033461F /* RateLimit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateLimit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2173752C1BA2791E0033461F /* PersistentRateLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentRateLimit.swift; sourceTree = "<group>"; };
-		219E73001B27702C004AB616 /* RateLimit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateLimit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		219E73031B27702C004AB616 /* RateLimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RateLimit.h; sourceTree = "<group>"; };
-		219E73051B27702C004AB616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		219E730A1B27702C004AB616 /* RateLimitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RateLimitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B108381B279A4F003693A7 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B1083A1B279A4F003693A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21B1083C1B279A4F003693A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		21B108411B279A4F003693A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		21B108441B279A4F003693A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		21B108461B279A4F003693A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21B1084A1B279BB6003693A7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		21CDDFF41B278DB5001B8D87 /* RateLimit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateLimit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21CDDFFD1B278DB5001B8D87 /* RateLimitTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RateLimitTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21CDE0111B278F54001B8D87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21CDE0121B278F54001B8D87 /* RateLimitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateLimitTests.swift; sourceTree = "<group>"; };
-		36C08FD91B28EC85005DDE76 /* RateLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateLimit.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		217375181BA278BF0033461F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		219E72FC1B27702C004AB616 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		219E73071B27702C004AB616 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				219E730B1B27702C004AB616 /* RateLimit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21B108351B279A4F003693A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21E548E81BF69878004855AE /* RateLimit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21CDDFF01B278DB5001B8D87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21CDDFFA1B278DB5001B8D87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21CDDFFE1B278DB5001B8D87 /* RateLimit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		219E72F61B27702C004AB616 = {
-			isa = PBXGroup;
-			children = (
-				21B108391B279A4F003693A7 /* Example */,
-				219E73021B27702C004AB616 /* RateLimit */,
-				21CDE0101B278F54001B8D87 /* Tests */,
-				219E73011B27702C004AB616 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		219E73011B27702C004AB616 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				219E73001B27702C004AB616 /* RateLimit.framework */,
-				219E730A1B27702C004AB616 /* RateLimitTests-iOS.xctest */,
-				21CDDFF41B278DB5001B8D87 /* RateLimit.framework */,
-				21CDDFFD1B278DB5001B8D87 /* RateLimitTests-macOS.xctest */,
-				21B108381B279A4F003693A7 /* Example.app */,
-				2173751C1BA278BF0033461F /* RateLimit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		219E73021B27702C004AB616 /* RateLimit */ = {
-			isa = PBXGroup;
-			children = (
-				219E73031B27702C004AB616 /* RateLimit.h */,
-				36C08FD91B28EC85005DDE76 /* RateLimit.swift */,
-				2173752C1BA2791E0033461F /* PersistentRateLimit.swift */,
-				219E73051B27702C004AB616 /* Info.plist */,
-			);
-			path = RateLimit;
-			sourceTree = "<group>";
-		};
-		21B108391B279A4F003693A7 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				21B1083A1B279A4F003693A7 /* AppDelegate.swift */,
-				21B1083C1B279A4F003693A7 /* ViewController.swift */,
-				21B1084A1B279BB6003693A7 /* Main.storyboard */,
-				21B108411B279A4F003693A7 /* Assets.xcassets */,
-				21B108431B279A4F003693A7 /* LaunchScreen.storyboard */,
-				21B108461B279A4F003693A7 /* Info.plist */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		21CDE0101B278F54001B8D87 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				21CDE0111B278F54001B8D87 /* Info.plist */,
-				21CDE0121B278F54001B8D87 /* RateLimitTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		217375191BA278BF0033461F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				217375241BA278DE0033461F /* RateLimit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		219E72FD1B27702C004AB616 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				219E73041B27702C004AB616 /* RateLimit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21CDDFF11B278DB5001B8D87 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21CDE00D1B278E37001B8D87 /* RateLimit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		2173751B1BA278BF0033461F /* RateLimit-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 217375211BA278BF0033461F /* Build configuration list for PBXNativeTarget "RateLimit-watchOS" */;
-			buildPhases = (
-				217375171BA278BF0033461F /* Sources */,
-				217375181BA278BF0033461F /* Frameworks */,
-				217375191BA278BF0033461F /* Headers */,
-				2173751A1BA278BF0033461F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RateLimit-watchOS";
-			productName = "RateLimit-watchOS";
-			productReference = 2173751C1BA278BF0033461F /* RateLimit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		219E72FF1B27702C004AB616 /* RateLimit-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 219E73141B27702C004AB616 /* Build configuration list for PBXNativeTarget "RateLimit-iOS" */;
-			buildPhases = (
-				219E72FB1B27702C004AB616 /* Sources */,
-				219E72FC1B27702C004AB616 /* Frameworks */,
-				219E72FD1B27702C004AB616 /* Headers */,
-				219E72FE1B27702C004AB616 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RateLimit-iOS";
-			productName = RateLimit;
-			productReference = 219E73001B27702C004AB616 /* RateLimit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		219E73091B27702C004AB616 /* RateLimitTests-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 219E73171B27702C004AB616 /* Build configuration list for PBXNativeTarget "RateLimitTests-iOS" */;
-			buildPhases = (
-				219E73061B27702C004AB616 /* Sources */,
-				219E73071B27702C004AB616 /* Frameworks */,
-				219E73081B27702C004AB616 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				219E730D1B27702C004AB616 /* PBXTargetDependency */,
-			);
-			name = "RateLimitTests-iOS";
-			productName = RateLimitTests;
-			productReference = 219E730A1B27702C004AB616 /* RateLimitTests-iOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		21B108371B279A4F003693A7 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21B108471B279A4F003693A7 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				21B108341B279A4F003693A7 /* Sources */,
-				21B108351B279A4F003693A7 /* Frameworks */,
-				21B108361B279A4F003693A7 /* Resources */,
-				21E548E91BF6987B004855AE /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				21E548E71BF69874004855AE /* PBXTargetDependency */,
-			);
-			name = Example;
-			productName = Example;
-			productReference = 21B108381B279A4F003693A7 /* Example.app */;
-			productType = "com.apple.product-type.application";
-		};
-		21CDDFF31B278DB5001B8D87 /* RateLimit-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21CDE0051B278DB5001B8D87 /* Build configuration list for PBXNativeTarget "RateLimit-macOS" */;
-			buildPhases = (
-				21CDDFEF1B278DB5001B8D87 /* Sources */,
-				21CDDFF01B278DB5001B8D87 /* Frameworks */,
-				21CDDFF11B278DB5001B8D87 /* Headers */,
-				21CDDFF21B278DB5001B8D87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RateLimit-macOS";
-			productName = RateLimit;
-			productReference = 21CDDFF41B278DB5001B8D87 /* RateLimit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		21CDDFFC1B278DB5001B8D87 /* RateLimitTests-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21CDE0081B278DB5001B8D87 /* Build configuration list for PBXNativeTarget "RateLimitTests-macOS" */;
-			buildPhases = (
-				21CDDFF91B278DB5001B8D87 /* Sources */,
-				21CDDFFA1B278DB5001B8D87 /* Frameworks */,
-				21CDDFFB1B278DB5001B8D87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				21CDE0001B278DB5001B8D87 /* PBXTargetDependency */,
-			);
-			name = "RateLimitTests-macOS";
-			productName = RateLimitTests;
-			productReference = 21CDDFFD1B278DB5001B8D87 /* RateLimitTests-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		219E72F71B27702C004AB616 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "Sam Soffes";
-				TargetAttributes = {
-					2173751B1BA278BF0033461F = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					219E72FF1B27702C004AB616 = {
-						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0800;
-					};
-					219E73091B27702C004AB616 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					21B108371B279A4F003693A7 = {
-						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0800;
-					};
-					21CDDFF31B278DB5001B8D87 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					21CDDFFC1B278DB5001B8D87 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-				};
-			};
-			buildConfigurationList = 219E72FA1B27702C004AB616 /* Build configuration list for PBXProject "RateLimit" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 219E72F61B27702C004AB616;
-			productRefGroup = 219E73011B27702C004AB616 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				21B108371B279A4F003693A7 /* Example */,
-				219E72FF1B27702C004AB616 /* RateLimit-iOS */,
-				219E73091B27702C004AB616 /* RateLimitTests-iOS */,
-				21CDDFF31B278DB5001B8D87 /* RateLimit-macOS */,
-				21CDDFFC1B278DB5001B8D87 /* RateLimitTests-macOS */,
-				2173751B1BA278BF0033461F /* RateLimit-watchOS */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		2173751A1BA278BF0033461F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		219E72FE1B27702C004AB616 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		219E73081B27702C004AB616 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21B108361B279A4F003693A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21B1084B1B279BB6003693A7 /* Main.storyboard in Resources */,
-				21B108451B279A4F003693A7 /* LaunchScreen.storyboard in Resources */,
-				21B108421B279A4F003693A7 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21CDDFF21B278DB5001B8D87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21CDDFFB1B278DB5001B8D87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		217375171BA278BF0033461F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				217375251BA278DE0033461F /* RateLimit.swift in Sources */,
-				2173752F1BA2791E0033461F /* PersistentRateLimit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		219E72FB1B27702C004AB616 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36C08FDA1B28EC85005DDE76 /* RateLimit.swift in Sources */,
-				2173752D1BA2791E0033461F /* PersistentRateLimit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		219E73061B27702C004AB616 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21CDE0171B278F97001B8D87 /* RateLimitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21B108341B279A4F003693A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21B1083D1B279A4F003693A7 /* ViewController.swift in Sources */,
-				21B1083B1B279A4F003693A7 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21CDDFEF1B278DB5001B8D87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36C08FDB1B28EC85005DDE76 /* RateLimit.swift in Sources */,
-				2173752E1BA2791E0033461F /* PersistentRateLimit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21CDDFF91B278DB5001B8D87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21CDE0161B278F96001B8D87 /* RateLimitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		219E730D1B27702C004AB616 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 219E72FF1B27702C004AB616 /* RateLimit-iOS */;
-			targetProxy = 219E730C1B27702C004AB616 /* PBXContainerItemProxy */;
-		};
-		21CDE0001B278DB5001B8D87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21CDDFF31B278DB5001B8D87 /* RateLimit-macOS */;
-			targetProxy = 21CDDFFF1B278DB5001B8D87 /* PBXContainerItemProxy */;
-		};
-		21E548E71BF69874004855AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 219E72FF1B27702C004AB616 /* RateLimit-iOS */;
-			targetProxy = 21E548E61BF69874004855AE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		21B108431B279A4F003693A7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				21B108441B279A4F003693A7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		217375221BA278BF0033461F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RateLimit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.ratelimit;
-				PRODUCT_NAME = RateLimit;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		217375231BA278BF0033461F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RateLimit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.ratelimit;
-				PRODUCT_NAME = RateLimit;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		219E73121B27702C004AB616 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		219E73131B27702C004AB616 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_CODE_COVERAGE = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		219E73151B27702C004AB616 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RateLimit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.RateLimit;
-				PRODUCT_NAME = RateLimit;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				WARNING_CFLAGS = (
-					"-Weverything",
-					"-Wno-missing-variable-declarations",
-					"-Wno-cstring-format-directive",
-				);
-			};
-			name = Debug;
-		};
-		219E73161B27702C004AB616 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RateLimit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.RateLimit;
-				PRODUCT_NAME = RateLimit;
-				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Weverything",
-					"-Wno-missing-variable-declarations",
-					"-Wno-cstring-format-directive",
-				);
-			};
-			name = Release;
-		};
-		219E73181B27702C004AB616 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.RateLimitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		219E73191B27702C004AB616 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.RateLimitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		21B108481B279A4F003693A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		21B108491B279A4F003693A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		21CDE0061B278DB5001B8D87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = RateLimit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.RateLimit;
-				PRODUCT_NAME = RateLimit;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				WARNING_CFLAGS = (
-					"-Weverything",
-					"-Wno-missing-variable-declarations",
-					"-Wno-cstring-format-directive",
-				);
-			};
-			name = Debug;
-		};
-		21CDE0071B278DB5001B8D87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = RateLimit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.RateLimit;
-				PRODUCT_NAME = RateLimit;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Weverything",
-					"-Wno-missing-variable-declarations",
-					"-Wno-cstring-format-directive",
-				);
-			};
-			name = Release;
-		};
-		21CDE0091B278DB5001B8D87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.RateLimitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		21CDE00A1B278DB5001B8D87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.RateLimitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		217375211BA278BF0033461F /* Build configuration list for PBXNativeTarget "RateLimit-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				217375221BA278BF0033461F /* Debug */,
-				217375231BA278BF0033461F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		219E72FA1B27702C004AB616 /* Build configuration list for PBXProject "RateLimit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				219E73121B27702C004AB616 /* Debug */,
-				219E73131B27702C004AB616 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		219E73141B27702C004AB616 /* Build configuration list for PBXNativeTarget "RateLimit-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				219E73151B27702C004AB616 /* Debug */,
-				219E73161B27702C004AB616 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		219E73171B27702C004AB616 /* Build configuration list for PBXNativeTarget "RateLimitTests-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				219E73181B27702C004AB616 /* Debug */,
-				219E73191B27702C004AB616 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		21B108471B279A4F003693A7 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				21B108481B279A4F003693A7 /* Debug */,
-				21B108491B279A4F003693A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		21CDE0051B278DB5001B8D87 /* Build configuration list for PBXNativeTarget "RateLimit-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				21CDE0061B278DB5001B8D87 /* Debug */,
-				21CDE0071B278DB5001B8D87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		21CDE0081B278DB5001B8D87 /* Build configuration list for PBXNativeTarget "RateLimitTests-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				21CDE0091B278DB5001B8D87 /* Debug */,
-				21CDE00A1B278DB5001B8D87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 219E72F71B27702C004AB616 /* Project object */;
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_RateLimit, ______Target_RateLimitTests);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/RateLimit/PersistentRateLimit.swift' = {
+            name = 'PersistentRateLimit.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Sources/RateLimit/PersistentRateLimit.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/RateLimit/RateLimit.swift' = {
+            name = 'RateLimit.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Sources/RateLimit/RateLimit.swift';
+            sourceTree = '<group>';
+        };
+        _______Group_RateLimit = {
+            isa = PBXGroup;
+            name = 'RateLimit';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/RateLimit/PersistentRateLimit.swift', '__PBXFileRef_Sources/RateLimit/RateLimit.swift');
+        };
+        ______Target_RateLimit = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_RateLimit;
+            buildPhases = (
+CompilePhase_RateLimit, ___LinkPhase_RateLimit);
+            buildRules = ();
+            dependencies = ();
+            name = 'RateLimit';
+            productName = RateLimit;
+            productReference = _____Product_RateLimit;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_RateLimit = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'RateLimit.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_RateLimit = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/RateLimit/PersistentRateLimit.swift', '__src_cc_ref_Sources/RateLimit/RateLimit.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/RateLimit/PersistentRateLimit.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/RateLimit/PersistentRateLimit.swift';
+        };
+        '__src_cc_ref_Sources/RateLimit/RateLimit.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/RateLimit/RateLimit.swift';
+        };
+        ___LinkPhase_RateLimit = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_RateLimit = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_RateLimit, _ReleaseConf_RateLimit);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_RateLimit = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "RateLimit.xcodeproj/RateLimit_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  PRODUCT_BUNDLE_IDENTIFIER = "RateLimit" ;  PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)" ;  PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Debug;
+        };
+        _ReleaseConf_RateLimit = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "RateLimit.xcodeproj/RateLimit_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  PRODUCT_BUNDLE_IDENTIFIER = "RateLimit" ;  PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)" ;  PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Release;
+        };
+        __Dependency_RateLimit = {
+            isa = PBXTargetDependency;
+            target = ______Target_RateLimit;
+        };
+        '__PBXFileRef_Tests/RateLimitTests/RateLimitTests.swift' = {
+            name = 'RateLimitTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/RateLimitTests/RateLimitTests.swift';
+            sourceTree = '<group>';
+        };
+        _______Group_RateLimitTests = {
+            isa = PBXGroup;
+            name = 'RateLimitTests';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/RateLimitTests/RateLimitTests.swift');
+        };
+        ______Target_RateLimitTests = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_RateLimitTests;
+            buildPhases = (
+CompilePhase_RateLimitTests, ___LinkPhase_RateLimitTests);
+            buildRules = ();
+            dependencies = (__Dependency_RateLimit);
+            name = 'RateLimitTests';
+            productName = RateLimitTests;
+            productReference = _____Product_RateLimitTests;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_RateLimitTests = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'RateLimitTests.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_RateLimitTests = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/RateLimitTests/RateLimitTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/RateLimitTests/RateLimitTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/RateLimitTests/RateLimitTests.swift';
+        };
+        ___LinkPhase_RateLimitTests = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_RateLimit_via_RateLimitTests);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_RateLimit_via_RateLimitTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_RateLimit;
+        };
+        _______Confs_RateLimitTests = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_RateLimitTests, _ReleaseConf_RateLimitTests);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_RateLimitTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "RateLimit.xcodeproj/RateLimitTests_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Debug;
+        };
+        _ReleaseConf_RateLimitTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "RateLimit.xcodeproj/RateLimitTests_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Release;
+        };
+        __Dependency_RateLimitTests = {
+            isa = PBXTargetDependency;
+            target = ______Target_RateLimitTests;
+        };
+        '__PBXFileRef_RateLimit.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'RateLimit.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_RateLimit.xcodeproj/Configs/Debug.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'RateLimit.xcodeproj/Configs/Debug.xcconfig';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_RateLimit.xcodeproj/Configs/Release.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'RateLimit.xcodeproj/Configs/Release.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_RateLimit.xcodeproj/Configs/Project.xcconfig', '__PBXFileRef_RateLimit.xcodeproj/Configs/Debug.xcconfig', '__PBXFileRef_RateLimit.xcodeproj/Configs/Release.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_RateLimit);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_RateLimitTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_RateLimitTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_RateLimit);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_RateLimit.xcodeproj/Configs/Debug.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_RateLimit.xcodeproj/Configs/Release.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
 }
