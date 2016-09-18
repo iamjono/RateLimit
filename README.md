@@ -12,6 +12,7 @@ This fork is intended as a server side utility.
 
 * It is Swift 3.0 and Swift Package Manager (SPM) ready.
 
+The original repo can be found here: [https://github.com/soffes/RateLimit](https://github.com/soffes/RateLimit). Thanks @soffees for the excellent work!
 
 ## Usage
 
