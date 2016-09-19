@@ -33,9 +33,6 @@ Open up the included [Xcode project](RateLimit.xcodeproj) for [tests](Tests). Se
 
 - Swift version 3.0
 
-
-## Installation
-
 ### Install via Swift Package Manager
 
 * Add the following to your `Package.swift` file:
